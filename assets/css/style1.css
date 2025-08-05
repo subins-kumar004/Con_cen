@@ -1,0 +1,174 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('../images/logo.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f0f0f0; /* Light text color for contrast */
+}
+
+/* Header */
+header {
+    background-color: rgba(5, 20, 30, 0.9); /* Dark transparent background */
+    color: white;
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.site-title {
+    margin: 0;
+    color: #05c649; /* Turquoise accent for title */
+    font-family: "Lucida Calligraphy", sans-serif;  /* Use Segoe Print font */
+    font-size: 2.5rem; /* Adjust the font size */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a shadow for better aesthetics */
+    margin: 0; /* Remove default margin */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #f0f0f0; /* Light text color */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00bfae; /* Teal blue hover effect */
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(5, 20, 30, 0.7); /* Dark transparent box */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 90%; /* Responsive width */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6); /* Subtle shadow */
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    color: #05c649; /* Turquoise accent for headings */
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #f0f0f0; /* Light text for better readability */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Auditoriums Section */
+#auditoriums {
+    padding: 40px 20px;
+    background-color: rgba(5, 20, 30, 0.7); /* Dark transparent box */
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 90%;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6); /* Subtle shadow */
+}
+
+#auditoriums h2 {
+    font-size: 2.5rem;
+    color: #05c649; /* Turquoise accent for headings */
+    margin-bottom: 20px;
+}
+
+.auditoriums-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.auditorium {
+    background-color: rgba(5, 20, 30, 0.7); /* Dark transparent box */
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6); /* Subtle shadow */
+    transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.auditorium img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.auditorium h3 {
+    font-size: 1.8rem;
+    color: #05c649; /* Turquoise accent */
+    margin: 15px 0;
+}
+
+.auditorium p {
+    font-size: 1rem;
+    color: #f0f0f0; /* Light text for better readability */
+}
+
+.auditorium .button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #00bfae; /* Teal blue button */
+    color: #0a192f; /* Dark text on button */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.auditorium .button:hover {
+    background-color: #ff5733; /* Red hover effect */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(5, 20, 30, 0.9); /* Dark transparent background */
+    color: white;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .auditoriums-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .auditorium {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
